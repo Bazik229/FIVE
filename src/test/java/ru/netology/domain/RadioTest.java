@@ -39,27 +39,13 @@ class RadioTest {
     void shouldIncreaseVolume() {
         radio.setValueVolume(12);
         radio.increaseVolume();
-        assertEquals(6, radio.getValueVolume());
+        assertEquals(1, radio.getValueVolume());
     }
 
     @Test
     void shouldDecreaseVolume() {
         radio.setValueVolume(-2);
         radio.decreaseVolume();
-        assertEquals(1, radio.getValueVolume());
-    }
-
-    @Test
-    void hello(){
-//        int a ;
-//        int num = 4;
-//        a = ++num;
-//        num++;
-        for (int i = 0; i < 10; i++) {
-            System.out.println(i);
-        }
-
-
-//        System.out.println(a);
+        assertEquals(0, radio.getValueVolume());
     }
 }
